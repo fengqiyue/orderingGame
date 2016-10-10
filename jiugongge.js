@@ -117,6 +117,7 @@ function restart(){
 }
 
 function random_d(){
+    //一下这段被注释的代码是另一种打散小div的方法，原理是随机互换小div的位置，缺点是打散后有一定的概率无法复原
     // for(var i=9; i>1; --i){
     //     var to=parseInt(Math.random()*(i-1)+1);//产生随机数，范围为1到i，不能超出范围，因为没这个id的DIV
     //     if(d[i]!=0){          //把当前的DIV位置设置为随机产生的DIV的位置

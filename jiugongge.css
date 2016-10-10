@@ -14,21 +14,17 @@ body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fo
   table { border-collapse:collapse; border-spacing:0; }
 /*  样式初始化*/
 
-body {
+body {           /*浏览器屏幕大小自动适配 */
   width: 100%;
   height: 100%;
-}
-
-button {
-  display: block;
 }
 
 #all {
   position: relative;
   width: 100%;
   height: 800px;
-  margin: 0 auto;
-  margin-top: 20px;
+  margin: 0 auto;     /*居中*/
+  margin-top: 20px;   /*我开心才写的，你不喜欢可以删掉*/
 }
 
 #game {
@@ -36,9 +32,9 @@ button {
   display: inline-block;
   width: 450px;
   height:450px;
-  background-color: #66ffcc;
+  background-color: #66ffcc;  /*初音绿*/
   box-shadow: 0 0 10px #66ffcc;
-  margin: 0 auto;
+  margin: 0 auto;   /*居中*/
   top:0px;
   right: 0px;
   bottom: 0px;
@@ -50,7 +46,7 @@ button {
   width: 149px;
   height: 149px;
   box-shadow: 1px 1px 2px #777;
-  background-color: #20a6fa;
+  background-color: #66ccff; /*天依蓝*/
   color: white;
   text-align: center;
   font-size: 150px;
@@ -64,7 +60,7 @@ button {
 }
 
 #game div:hover{
-    color: #ffe171;
+    color: #ffe171; /*悬浮变色*/
 }
 
 #control {
@@ -86,32 +82,26 @@ button {
 
 #start{
     display: inline-block;
-    font-size: 28px;
     width: 100px;
-    height: 28px;
-    background-color: #20a6fa;
-    color: #ffe171;
+    background-color: #66ccff;
+    text-shadow: 1px 1px 2px #ffe171;/*字体阴影*/
+    border-radius: 5px;              /*圆角属性*/
+    box-shadow: 2px 2px 5px #4c98f5;/*盒子阴影*/
+    text-align: center;             /*文字居中*/
+    cursor: pointer;                /*光标变形*/
+}
+
+#restart{
+    display: inline-block;
+    width: 100px;
+    background-color: #66ccff;
     text-shadow: 1px 1px 2px #ffe171;
     border-radius: 5px;
     box-shadow: 2px 2px 5px #4c98f5;
     text-align: center;
     cursor: pointer;
 }
-
-#restart{
-    display: inline-block;
-    font-size: 28px;
-    width: 100px;
-    height: 28px;
-    background-color: #20a6fa;
-    color: #ffe171;
-    text-shadow: 1px 1px 2px #ffe171;/*字体阴影*/
-    border-radius: 5px;/*圆角属性*/
-    box-shadow: 2px 2px 5px #4c98f5;/*盒子阴影*/
-    text-align: center;/*文字居中*/
-    cursor: pointer;
-}
-
+/*一一确定小div（棋子）的初始位置，本游戏棋盘宽450px*/
 #d1{
     left: 0px;
 }
