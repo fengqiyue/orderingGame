@@ -1,0 +1,31 @@
+﻿<html>
+<head>
+	<title>九宫格排序游戏</title>
+	<link rel="stylesheet" href="jiugongge.css">
+</head>
+<body>
+	<div id="all"> 
+	<!--总体区域-->
+		<div id="game">
+		<!--九宫格区域-->
+			<div id="d1" onclick="move(1)">1</div>
+			<div id="d2" onclick="move(2)">2</div>
+			<div id="d3" onclick="move(3)">3</div>
+			<div id="d4" onclick="move(4)">4</div>
+			<div id="d5" onclick="move(5)">5</div>
+			<div id="d6" onclick="move(6)">6</div>
+			<div id="d7" onclick="move(7)">7</div>
+			<div id="d8" onclick="move(8)">8</div>
+		</div>
+		<div id="control">
+		<!--控制按钮区域-->
+			<span id="timeText">总用时</span>
+			<span id="timer"></span>
+			<button id="start" onclick="start()">开始</button>
+			<button id="restart" onclick="restart()">重新开始</button>
+<!-- 			<button id="backout">悔棋</button>
+ -->		</div>
+	</div>
+	<script src="jiugongge.js"></script>
+</body>
+</html>
